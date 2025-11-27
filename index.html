@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus - Oyun & Teknoloji Portalı</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #0d1117;
+        color: #c9d1d9;
+        font-family: 'Inter', sans-serif;
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+    </style>
+</head>
+<body class="bg-[#0d1117] text-[#c9d1d9]">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 left-0 right-0 bg-opacity-80 bg-[#161b22] backdrop-blur-md border-b border-gray-700 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="#anasayfa" class="text-2xl font-black text-white tracking-wider">
+              <span class="text-purple-400">NEXUS</span>
+            </a>
+          </div>
+          <nav class="hidden md:flex items-center space-x-2">
+            <a href="#anasayfa" class="flex items-center px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ease-in-out text-gray-300 hover:bg-gray-700 hover:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              Anasayfa
+            </a>
+            <a href="#oyun" class="flex items-center px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ease-in-out text-gray-300 hover:bg-gray-700 hover:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><line x1="6" y1="12" x2="6" y2="8"></line><line x1="6" y1="16" x2="6" y2="12"></line><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.01.15v5.52c0 .05-.004.1-.01.15A4 4 0 0 0 6.68 19h10.64a4 4 0 0 0 3.99-3.77 1 1 0 0 0-1-1.23h-2.24a1 1 0 0 0-1-1h-4.04a1 1 0 0 0-1 1H6.72a1 1 0 0 0-1 1.23 4 4 0 0 0 3.99 3.77h10.64a4 4 0 0 0 3.978-3.59c.006-.052.01-.101.01-.15v-5.52c0-.05.004-.1.01-.15A4 4 0 0 0 17.32 5Z"></path><line x1="15" y1="9" x2="19" y2="9"></line><line x1="17" y1="7" x2="17" y2="11"></line></svg>
+              Oyun
+            </a>
+            <a href="#teknoloji" class="flex items-center px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ease-in-out text-gray-300 hover:bg-gray-700 hover:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>
+              Teknoloji
+            </a>
+            <a href="#haberler" class="flex items-center px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ease-in-out text-gray-300 hover:bg-gray-700 hover:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4"></path><path d="M16 2v20"></path><path d="M8 7h4"></path><path d="M8 12h4"></path><path d="M8 17h4"></path></svg>
+              Haberler
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-4 py-8">
+
+      <!-- HERO SECTION -->
+      <section id="anasayfa" class="pt-16">
+        <div class="relative rounded-lg overflow-hidden h-96 md:h-[500px] flex items-end p-8 text-white shadow-2xl">
+          <div class="absolute inset-0">
+            <img src="https://picsum.photos/seed/cyberpunk/1200/800" alt="Cybernetic Horizon" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+          </div>
+          <div class="relative z-10">
+            <span class="bg-blue-500 px-3 py-1 text-sm font-semibold rounded-full uppercase">Oyun</span>
+            <h2 class="text-3xl md:text-5xl font-bold mt-4 leading-tight">Cybernetic Horizon: Beklenen RPG Oyunu İncelemesi</h2>
+            <p class="mt-2 md:w-2/3 text-lg text-gray-300">Yıllardır beklenen Cybernetic Horizon sonunda çıktı. Neon ışıklı şehirlerde geçen bu macera beklentileri karşılıyor mu?</p>
+            <button class="mt-6 bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors duration-300">
+              Devamını Oku
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- OYUN SECTION -->
+      <section id="oyun" class="mt-16">
+        <h2 class="text-3xl font-bold border-l-4 border-blue-500 pl-4 mb-8">Oyun Dünyası</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Article Card -->
+          <div class="bg-[#161b22] rounded-lg overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out group">
+            <div class="relative">
+              <img class="w-full h-48 object-cover" src="https://picsum.photos/seed/fantasy/800/600" alt="Echoes of Eternity">
+              <div class="absolute top-0 right-0 mt-2 mr-2 text-xs text-white uppercase font-bold px-2 py-1 rounded bg-blue-500">Oyun</div>
+              <div class="absolute bottom-0 left-0 mb-2 ml-2 bg-purple-600 text-white text-lg font-bold w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#161b22]">9.2</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2 text-white group-hover:text-purple-400 transition-colors">Echoes of Eternity: Fantastik Dünyada Yeni Bir Soluk</h3>
+              <p class="text-gray-400 text-base mb-4">Bağımsız bir stüdyonun geliştirdiği 'Echoes of Eternity', büyüleyici sanat tarzı ve özgün hikayesiyle dikkat çekiyor.</p>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="https://i.pravatar.cc/150?u=can" alt="Can Demir">
+                <div class="text-sm">
+                  <p class="text-white leading-none">Can Demir</p>
+                  <p class="text-gray-500">10 Ağustos 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article Card -->
+          <div class="bg-[#161b22] rounded-lg overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out group">
+            <div class="relative">
+              <img class="w-full h-48 object-cover" src="https://picsum.photos/seed/racing/800/600" alt="Solaris Racers">
+              <div class="absolute top-0 right-0 mt-2 mr-2 text-xs text-white uppercase font-bold px-2 py-1 rounded bg-blue-500">Oyun</div>
+              <div class="absolute bottom-0 left-0 mb-2 ml-2 bg-purple-600 text-white text-lg font-bold w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#161b22]">8.0</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2 text-white group-hover:text-purple-400 transition-colors">Solaris Racers: Arcade Yarış Tutkunlarına Özel</h3>
+              <p class="text-gray-400 text-base mb-4">Geleceğin şehirlerinde geçen bu hızlı tempolu yarış oyunu, saf arcade eğlencesi sunuyor.</p>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="https://i.pravatar.cc/150?u=can" alt="Can Demir">
+                <div class="text-sm">
+                  <p class="text-white leading-none">Can Demir</p>
+                  <p class="text-gray-500">6 Ağustos 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- Article Card (From Hero) -->
+           <div class="bg-[#161b22] rounded-lg overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out group">
+            <div class="relative">
+              <img class="w-full h-48 object-cover" src="https://picsum.photos/seed/cyberpunk/800/600" alt="Cybernetic Horizon">
+              <div class="absolute top-0 right-0 mt-2 mr-2 text-xs text-white uppercase font-bold px-2 py-1 rounded bg-blue-500">Oyun</div>
+              <div class="absolute bottom-0 left-0 mb-2 ml-2 bg-purple-600 text-white text-lg font-bold w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#161b22]">8.5</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2 text-white group-hover:text-purple-400 transition-colors">Cybernetic Horizon: Beklenen RPG Oyunu İncelemesi</h3>
+              <p class="text-gray-400 text-base mb-4">Yıllardır beklenen Cybernetic Horizon sonunda çıktı. Neon ışıklı şehirlerde geçen bu macera beklentileri karşılıyor mu?</p>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="https://i.pravatar.cc/150?u=ayse" alt="Ayşe Yılmaz">
+                <div class="text-sm">
+                  <p class="text-white leading-none">Ayşe Yılmaz</p>
+                  <p class="text-gray-500">14 Ağustos 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEKNOLOJI SECTION -->
+      <section id="teknoloji" class="mt-16">
+        <h2 class="text-3xl font-bold border-l-4 border-green-500 pl-4 mb-8">Teknoloji Gündemi</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Article Card -->
+          <div class="bg-[#161b22] rounded-lg overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out group">
+            <div class="relative">
+              <img class="w-full h-48 object-cover" src="https://picsum.photos/seed/processor/800/600" alt="Quantum İşlemciler">
+              <div class="absolute top-0 right-0 mt-2 mr-2 text-xs text-white uppercase font-bold px-2 py-1 rounded bg-green-500">Teknoloji</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2 text-white group-hover:text-purple-400 transition-colors">Yeni Nesil Quantum İşlemciler Piyasayı Sarsacak</h3>
+              <p class="text-gray-400 text-base mb-4">Teknoloji devi QuantumLeap, ev kullanıcıları için tasarladığı yeni quantum işlemcilerini tanıttı. İşte detaylar...</p>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="https://i.pravatar.cc/150?u=mehmet" alt="Mehmet Kaya">
+                <div class="text-sm">
+                  <p class="text-white leading-none">Mehmet Kaya</p>
+                  <p class="text-gray-500">12 Ağustos 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article Card -->
+          <div class="bg-[#161b22] rounded-lg overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out group">
+            <div class="relative">
+              <img class="w-full h-48 object-cover" src="https://picsum.photos/seed/glasses/800/600" alt="Akıllı Gözlükler">
+              <div class="absolute top-0 right-0 mt-2 mr-2 text-xs text-white uppercase font-bold px-2 py-1 rounded bg-green-500">Teknoloji</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2 text-white group-hover:text-purple-400 transition-colors">Giyilebilir Teknoloji: Akıllı Gözlükler Geri Dönüyor</h3>
+              <p class="text-gray-400 text-base mb-4">Artırılmış gerçeklik destekli yeni nesil akıllı gözlükler, günlük hayatımızı nasıl değiştirecek?</p>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="https://i.pravatar.cc/150?u=mehmet" alt="Mehmet Kaya">
+                <div class="text-sm">
+                  <p class="text-white leading-none">Mehmet Kaya</p>
+                  <p class="text-gray-500">9 Ağustos 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- Article Card -->
+           <div class="bg-[#161b22] rounded-lg overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out group">
+            <div class="relative">
+              <img class="w-full h-48 object-cover" src="https://picsum.photos/seed/vr/800/600" alt="VR Deneyimi">
+              <div class="absolute top-0 right-0 mt-2 mr-2 text-xs text-white uppercase font-bold px-2 py-1 rounded bg-green-500">Teknoloji</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2 text-white group-hover:text-purple-400 transition-colors">VR Deneyiminde Yeni Bir Seviye: Neuralink Entegrasyonu</h3>
+              <p class="text-gray-400 text-base mb-4">Sanal gerçeklik başlıklarının beyin-bilgisayar arayüzleriyle birleşimi, hayal gücünün sınırlarını zorluyor.</p>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="https://i.pravatar.cc/150?u=mehmet" alt="Mehmet Kaya">
+                <div class="text-sm">
+                  <p class="text-white leading-none">Mehmet Kaya</p>
+                  <p class="text-gray-500">7 Ağustos 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HABERLER SECTION -->
+      <section id="haberler" class="mt-16">
+        <h2 class="text-3xl font-bold border-l-4 border-yellow-500 pl-4 mb-8">Sektörden Haberler</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <!-- Article Card -->
+          <div class="bg-[#161b22] rounded-lg overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out group">
+            <div class="relative">
+              <img class="w-full h-48 object-cover" src="https://picsum.photos/seed/esports/800/600" alt="E-Spor Arenası">
+              <div class="absolute top-0 right-0 mt-2 mr-2 text-xs text-white uppercase font-bold px-2 py-1 rounded bg-yellow-500">Haberler</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2 text-white group-hover:text-purple-400 transition-colors">E-Spor Arenası: Dünya Şampiyonası Finali Nefes Kesti</h3>
+              <p class="text-gray-400 text-base mb-4">Valorant Dünya Şampiyonası finalinde inanılmaz bir geri dönüş yaşandı. İşte unutulmaz anlar ve kazanan takım.</p>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="https://i.pravatar.cc/150?u=zeynep" alt="Zeynep Öztürk">
+                <div class="text-sm">
+                  <p class="text-white leading-none">Zeynep Öztürk</p>
+                  <p class="text-gray-500">11 Ağustos 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article Card -->
+          <div class="bg-[#161b22] rounded-lg overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out group">
+            <div class="relative">
+              <img class="w-full h-48 object-cover" src="https://picsum.photos/seed/conference/800/600" alt="Oyun Geliştirici Konferansı">
+              <div class="absolute top-0 right-0 mt-2 mr-2 text-xs text-white uppercase font-bold px-2 py-1 rounded bg-yellow-500">Haberler</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2 text-white group-hover:text-purple-400 transition-colors">Oyun Geliştirici Konferansı'ndan Öne Çıkanlar</h3>
+              <p class="text-gray-400 text-base mb-4">Bu yılki GDC'de, oyun motorlarındaki yenilikler ve bulut tabanlı oyun servislerinin geleceği konuşuldu.</p>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="https://i.pravatar.cc/150?u=zeynep" alt="Zeynep Öztürk">
+                <div class="text-sm">
+                  <p class="text-white leading-none">Zeynep Öztürk</p>
+                  <p class="text-gray-500">8 Ağustos 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="bg-[#161b22] border-t border-gray-700 mt-16">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+          <div>
+            <h2 class="text-xl font-bold text-white">NEXUS</h2>
+            <p class="text-gray-400 mt-1">Oyun & Teknoloji Dünyasına Açılan Kapınız</p>
+          </div>
+          <div class="flex space-x-4 mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-200" aria-label="Twitter">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current h-5 w-5"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.223.085 4.923 4.923 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.21c9.058 0 14.01-7.502 14.01-14.013 0-.213-.005-.426-.015-.637a9.935 9.935 0 002.433-2.52z"></path></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-200" aria-label="Instagram">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current h-5 w-5"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.765.297 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.297-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.148-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.314.935 20.644.523 19.854.228A7.26 7.26 0 0016.947.072C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.056 1.17-.249 1.805-.413 2.227-.217.562-.477.96-.896 1.382-.42.419-.82.679-1.38.896-.423.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.585-.015-4.85-.074c-1.17-.056-1.805-.249-2.227-.413-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.82-8.96-1.38-.165-.423-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.015-3.585.074-4.85c.056-1.17.249-1.805.413-2.227.217-.562.477.96.896-1.382.42-.419.819-.679 1.381-.896.422-.165 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zm0 4.865a5 5 0 100 10 5 5 0 000-10zm0 8.468a3.467 3.467 0 110-6.934 3.467 3.467 0 010 6.934zM16.965 6.57a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-8 pt-8 border-t border-gray-700">
+          © 2024 Nexus Portalı. Tüm hakları saklıdır.
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
